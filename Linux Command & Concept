@@ -13,11 +13,23 @@
 * how to check running process? 
 * how to check all process? 
 * how to find process id(pid) of service? 
+  netstat -nltup |grep <processname>
+         OR
+  ps -ef |grep <processname>
+        OR
+  ps -aux |rep <processname>
+ 
 * how to kill process? 
+  kill -9 pid  OR  kill -9 processname
+
 * how to search a file in linux? 
 * what is Iptables? 
-* how to check which port is open/listening? 
+* how to check which port is open/listening?
+  netstat -nltup
+  
 * how to list all port? 
+  netstat -nltup
+  
 * how to check which port is using, which service? 
 * how to check public ip & private ip & Mac adress? 
 * how to print a specific line or message from a file. 
@@ -32,6 +44,7 @@
 * difference between curl & wget & how to use them? 
 * How to check linux version? 
 * what is kernal & how to check kernal version? 
+  hostnamectl OR uname -a
 * how to set or modify the path in linux? 
 * what is softlink & hardlink? 
 * what is bind mount in linux? 
