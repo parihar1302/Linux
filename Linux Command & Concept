@@ -1,0 +1,38 @@
+## Linux Commands:-
+========================
+
+* how to check memory in linux? 
+* how to check disk space in linux? 
+* how to find which file or directory taking more space? 
+* how to check running process? 
+* how to check all process? 
+* how to find process id(pid) of service? 
+* how to kill process? 
+* how to search a file in linux? 
+* what is Iptables? 
+* how to check which port is open/listening? 
+* how to list all port? 
+* how to check which port is using, which service? 
+* how to check public ip & private ip & Mac adress? 
+* how to print a specific line or message from a file. 
+* how to print top 10 line from a file? 
+* how to print bottom 10 line from a file? 
+* how to create user & group? 
+* how to add normal user to sudo group? 
+* how to change permission to files or folders? 
+* how to change owner of files or folder? 
+* how to find logs? 
+* what is a purpose of grep command? 
+* difference between curl & wget & how to use them? 
+* How to check linux version? 
+* what is kernal & how to check kernal version? 
+* how to set or modify the path in linux? 
+* what is softlink & hardlink? 
+* what is bind mount in linux? 
+* how to zip/comparess multiple files or folder? 
+* how to extract zipped folder? 
+* how to resolve DNS hostname in linux?
+* how to check connectivity between two host/server? 
+* how to compare to files? 
+* how to login to server? 
+* how to copy file from one server to another?
