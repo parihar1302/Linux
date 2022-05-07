@@ -13,6 +13,9 @@
 * how to check running process? 
 * how to check all process? 
 * how to find process id(pid) of service? 
+  find . -name <filename> 
+        OR
+  find /home -name *.jpg          ##{finding all jpg file which are in /home directory}
   netstat -nltup |grep <processname>
          OR
   ps -ef |grep <processname>
@@ -26,11 +29,21 @@
 * what is Iptables? 
 * how to check which port is open/listening?
   netstat -nltup
+       OR
+  ss -tulw
   
 * how to list all port? 
   netstat -nltup
   
 * how to check which port is using, which service? 
+  netstat -nltup   OR   top
+  
+* how to check which process is running on port 80?
+  netstat -nltup |grep 80
+  
+* how to check which port is running on apache2?
+  netstat -nltup |grep apache2
+  
 * how to check public ip & private ip & Mac adress? 
 * how to print a specific line or message from a file. 
 * how to print top 10 line from a file? 
