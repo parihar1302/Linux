@@ -26,9 +26,9 @@
   kill -9 pid  OR  kill -9 processname
 
 * how to search a file in linux?
-  find . -name <filename.txt>                                 ##{. shos current directory/path}
+  find . -name <filename.txt>                                 ##{. shows current directory/path}
   
-* how to find all files which are having .sh extention?
+* how to find all files which are having .txt extention?
   find . -name *.txt
   
 * how to find a file with firstname?
