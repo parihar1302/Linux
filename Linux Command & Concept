@@ -25,7 +25,15 @@
 * how to kill process? 
   kill -9 pid  OR  kill -9 processname
 
-* how to search a file in linux? 
+* how to search a file in linux?
+  find . -name <filename.txt>                                 ##{. shos current directory/path}
+  
+* how to find all files which are having .sh extention?
+  find . -name *.txt
+  
+* how to find a file with firstname?
+  find . -type f -name sample*
+  
 * what is Iptables? 
 * how to check which port is open/listening?
   netstat -nltup
