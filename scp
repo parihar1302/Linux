@@ -1,0 +1,59 @@
+## Copy a file from one EC2 instance to Another ec2 instance
+---------------------------------------------------------------
+
+## Note:- Winscp & Putty ssh client required for GUI file transer from One to Another host
+=========
+
+
+## Method-A.)                  https://technoracle.com/copy-files-between-ec2-instances-easily/
+===============
+Step-1.) Copy instanc B SSH key to instance A 
+$ scp -i ec2_instance_A.pem ec2_instance_B.pem ubuntu@65.0.81.134:~       #{~ is location where ssh will be uploaded}
+
+Step-2.) Login to Instance A 
+$ ssh -i ec2_instance_A.pem ubuntu@12.34.56.78
+
+Step-3.) Now transfer the file to Instance B by using below command:-
+scp -i ec2_instance_B.pem sample.txt ubuntu@13.232.43.90:~
+
+Step-4.) Now login to Instnace B & Verify the file
+
+------------------------------------------------------------
+
+
+## Method-B.) 
+================
+Step-1.) Login to instance A
+
+Step-2.) Generating a SSH key
+$ ssh -keygen
+
+Step-2.) Copy the public SSH key (id_rsa key) to Instance B
+$ ssh-copy-id usernameofinstanceB@IPaddressofinstanceB
+
+$ scp username@server1_ip:/path_to_the_remote_file username@server2_ip:/
+       OR
+$ scp -i <keypairnaame> <file name> username@<publicIP>:/home/ec2-user/
+
+Step-3.) Now login to Instance B & verify
+-------------------------------------------------------------------------------------
+
+
+## Method-C.) By Using base64 coping from one Unix/Linux host to another
+======================================================================
+
+Step-1.) Loging to Linux Host A
+
+Step-2.) encrypting file with base64
+$ base64 -w0 sample.txt > testfile.base       ##{here sample.txt file enrypting in to testfile.base file}
+$ cat testfile.base       ##{copy the content, this needs to be pasted over Host B}
+
+Step-3.)  Now login to Linux Host B
+#Note:- create a file with same name & paste the content of Host A testfile.base file.
+
+$ vi testfile.base     ##{}paste the content here
+
+Step-4.) Now putting back in same sample.txt
+$ cat testfile.base | base64 --decode > sample.txt
+$ ls
+-------------------------------------------------------------------------------------------------------------------
