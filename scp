@@ -21,7 +21,7 @@ Step-4.) Now login to Instnace B & Verify the file
 ------------------------------------------------------------
 
 
-## Method-B.) 
+## Method-B.)                             https://www.youtube.com/watch?v=7K3tAhArPUY
 ================
 Step-1.) Login to instance A
 
@@ -31,9 +31,9 @@ $ ssh -keygen
 Step-2.) Copy the public SSH key (id_rsa key) to Instance B
 $ ssh-copy-id usernameofinstanceB@IPaddressofinstanceB
 
-$ scp username@server1_ip:/path_to_the_remote_file username@server2_ip:/
+$ scp -rv <file name> username@remoteIPAdd:/dest_path     ##For normal Linux Host
        OR
-$ scp -i <keypairnaame> <file name> username@<publicIP>:/home/ec2-user/
+$ scp -i <keypairnaame.pem> <file name> username@<publicIP>:/home/ec2-user/     ##{For AWS ec2}           ##{remote details:- username@<publicIP>:/home/ec2-user/}
 
 Step-3.) Now login to Instance B & verify
 -------------------------------------------------------------------------------------
