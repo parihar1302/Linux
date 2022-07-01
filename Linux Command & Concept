@@ -22,6 +22,8 @@
   
 * how to check all process? 
 * how to find process id(pid) of service? 
+
+* how to find a file ?
   find . -name <filename> 
         OR
   find /home -name *.jpg          ##{finding all jpg file which are in /home directory}
