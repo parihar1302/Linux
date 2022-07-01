@@ -12,8 +12,14 @@
   
 * how to check disk space in linux? 
   df -h 
+  
 * how to find which file or directory taking more space? 
+  df -h
+  du -h --max-dept=1 /path
+  
 * how to check running process? 
+  ps -aux OR ps -a
+  
 * how to check all process? 
 * how to find process id(pid) of service? 
   find . -name <filename> 
