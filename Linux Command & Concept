@@ -8,7 +8,10 @@
 ===================================
 
 * how to check memory in linux? 
+  free OR top OR htop
+  
 * how to check disk space in linux? 
+  df -h 
 * how to find which file or directory taking more space? 
 * how to check running process? 
 * how to check all process? 
