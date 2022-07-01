@@ -64,6 +64,9 @@
   netstat -nltup |grep apache2
   
 * how to check public ip & private ip & Mac adress? 
+  public ip:- curl ifconfig.me
+  private ip:- ifconfig   OR hostname -I
+  
 * how to print a specific line or message from a file. 
 * how to print top 10 line from a file? 
 * how to print bottom 10 line from a file? 
