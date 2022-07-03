@@ -27,6 +27,8 @@
   find . -name <filename> 
         OR
   find /home -name *.jpg          ##{finding all jpg file which are in /home directory}
+  
+* HOw to find process id & respective port?
   netstat -nltup |grep <processname>
          OR
   ps -ef |grep <processname>
@@ -45,7 +47,13 @@
 * how to find a file with firstname?
   find . -type f -name sample*
   
-* what is Iptables? 
+* what is Iptables?                         https://www.howtogeek.com/177621/the-beginners-guide-to-iptables-the-linux-firewall/
+  It's like a firewall which is a set of rules that allow system admin to manage incoming & outgoing traffic to your server.
+  Path:- /etc/sysconfig/iptables
+ 
+* What is ufw ?
+
+ 
 * how to check which port is open/listening?
   netstat -nltup
        OR
@@ -67,13 +75,39 @@
   public ip:- curl ifconfig.me
   private ip:- ifconfig   OR hostname -I
   
-* how to print a specific line or message from a file. 
+* what & why we use grep command?
+  
+* how to print a specific line or message or string from a file. 
+  grep <message> <filename.txt>   OR   grep -n "devops" hello.txt          ##{n shows line number}     https://www.decodingdevops.com/print-the-lines-with-particular-string-in-file-linux/
+      OR
+  Awk
+ 
+* how to print a specific string/line/message from perticular directory ?
+  grep -nr “string”  /path       EX:- grep -nr "devops" ./docker     ##{-r recursivly search in all files. where docker is the directory & . shows current working directory.}
+  
 * how to print top 10 line from a file? 
-* how to print bottom 10 line from a file? 
-* how to create user & group? 
-* how to add normal user to sudo group? 
+  head -10 <filename.txt>
+ 
+* how to print bottom 10 line from a file?
+  tail -10 <filename.txt>
+
+* how to create user ?                           https://phoenixnap.com/kb/how-to-create-sudo-user-on-ubuntu
+  useradd <username>    OR  adduser <username>
+  
+* how to create group ?
+  addgroup <groupname>
+
+* how to add regular user to sudo group?
+  usermod -aG sudo <username>
+  
 * how to change permission to files or folders? 
+  chmod 777 <filename.txt>   OR chmod +x <filename.txt>
+  
 * how to change owner of files or folder? 
+  ls -la
+  chown <newusername> <filename.txt>
+  ls -la
+  
 * how to find logs? 
 * what is a purpose of grep command? 
 * difference between curl & wget & how to use them? 
