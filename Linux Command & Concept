@@ -137,4 +137,6 @@
   scp -i keypair.pem username@ec2ipadd:<filename.txt> <destination_path>     ##username & ip add of ec2
   
 * how to copy file from one server(ec2) to another(ec2)?
+  you can use base64 follow th link --->    https://github.com/parihar1302/Linux/blob/e01b888417d40ee53a7bf87d6d8b3f0f6ae0b751/scp
+  
 * what is lsof ?
