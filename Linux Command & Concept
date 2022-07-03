@@ -123,5 +123,12 @@
 * how to check connectivity between two host/server? 
 * how to compare to files? 
 * how to login to server? 
+* how to copy file from local system to server(ec2) ?
+  open local terminal:-
+  ssh -i keypair.pem <filename.txt> username@ec2ipadd:
+  
+* how to copy file from server to local host ?
+  ssh -i keypair.pem <filename.txt> username@ecipadd:/destination_path
+  
 * how to copy file from one server to another?
 * what is lsof ?
