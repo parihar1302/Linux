@@ -7,6 +7,9 @@
 # Linux Interview Questions:-
 ===================================
 
+* Difference b/w sudo & su ?
+* how to check current install linux OS version ?
+* what is kernal & how to check the kernal version ?
 * how to check memory in linux? 
   free OR top OR htop
   
