@@ -5,50 +5,37 @@
 =========
 
 
-## Method-A.)                  https://technoracle.com/copy-files-between-ec2-instances-easily/
+## Method-A.):- Copy file from local system to server(ec2)
 ===============
-Step-1.) Copy instanc B SSH key to instance A 
-$ scp -i ec2_instance_A.pem ec2_instance_B.pem ubuntu@65.0.81.134:~       #{~ is location where ssh will be uploaded}
-
-Step-2.) Login to Instance A 
-$ ssh -i ec2_instance_A.pem ubuntu@12.34.56.78
-
-Step-3.) Now transfer the file to Instance B by using below command:-
-scp -i ec2_instance_B.pem sample.txt ubuntu@13.232.43.90:~
-
-Step-4.) Now login to Instnace B & Verify the file
+##open ec2 terminal:-
+scp -i keypair.pem <filename.txt> username@ec2ipadd:
 
 ------------------------------------------------------------
 
-
-## Method-B.)                             https://www.youtube.com/watch?v=7K3tAhArPUY
+## Method-B.):- Copy file from server(ec2) to local host                     
 ================
-Step-1.) Login to instance A
+##open local terminal:-
+scp -i keypair.pem username@ecipadd:<filename.txt> <destination_path>
 
-Step-2.) Generating a SSH key
-$ ssh -keygen
-
-Step-2.) Copy the public SSH key (id_rsa key) to Instance B
-$ ssh-copy-id usernameofinstanceB@IPaddressofinstanceB
-
-$ scp -rv <file name> username@remoteIPAdd:/dest_path     ##For normal Linux Host
-       OR
-$ scp -i <keypairnaame.pem> <file name> username@<publicIP>:/home/ec2-user/     ##{For AWS ec2}           ##{remote details:- username@<publicIP>:/home/ec2-user/}
-
-Step-3.) Now login to Instance B & verify
 -------------------------------------------------------------------------------------
 
+## Method- C.) Copy file from one server(ec2) to another(ec2):-
+==============
 
-## Method-C.) By Using base64 coping from one Unix/Linux host to another
+
+------------------------------------------------------------------------------------------
+
+
+## Method-D.) By Using base64 coping from one Unix/Linux host to another
 ======================================================================
 
 Step-1.) Loging to Linux Host A
 
-Step-2.) encrypting file with base64
-$ base64 -w0 sample.txt > testfile.base       ##{here sample.txt file enrypting in to testfile.base file}
+Step-2.) encrypting file with base64 :-
+$ base64 -w0 sample.txt > testfile.base       ##{sample.txt can be modified & here that file is enrypting into testfile.base file}
 $ cat testfile.base       ##{copy the content, this needs to be pasted over Host B}
 
-Step-3.)  Now login to Linux Host B
+Step-3.)  Now login to Linux Host B :- 
 #Note:- create a file with same name & paste the content of Host A testfile.base file.
 
 $ vi testfile.base     ##{}paste the content here
