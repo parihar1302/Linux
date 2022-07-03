@@ -125,13 +125,16 @@
 * how to resolve DNS hostname in linux?
 * how to check connectivity between two host/server? 
 * how to compare to files? 
-* how to login to server? 
+* how to login to server?
+  ssh -A username@remoteipadd           ## for Linux(virtualbox/vmware)
+  ssh -i keypair.pem user@ec2ipadd          ## for AWS
 * how to copy file from local system to server(ec2) ?
-  open local terminal:-
-  ssh -i keypair.pem <filename.txt> username@ec2ipadd:
+  ##open ec2 terminal:-
+  scp -i keypair.pem <filename.txt> username@ec2ipadd:                     ##username & ip add of ec2
   
-* how to copy file from server to local host ?
-  ssh -i keypair.pem <filename.txt> username@ecipadd:/destination_path
+* how to copy file from server(ec2) to local host ?
+  ##open local terminal:-
+  scp -i keypair.pem username@ec2ipadd:<filename.txt> <destination_path>     ##username & ip add of ec2
   
-* how to copy file from one server to another?
+* how to copy file from one server(ec2) to another(ec2)?
 * what is lsof ?
