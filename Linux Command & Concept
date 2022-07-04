@@ -8,10 +8,18 @@
 ===================================
 
 * Difference b/w sudo & su ?
+  sudo :- it makes you a root/super user.
+  su :- it switches to the other user. 
+  
 * how to check current install linux OS version ?
+  uname  -a    OR  cat /etc/os-release
+  
 * what is kernal & how to check the kernal version ?
+  It's an interface which manages the connection b/w software & hardware. 
+  uname  -a
+  
 * how to check memory in linux? 
-  free OR top OR htop
+  free   OR   top   OR   htop
   
 * how to check disk space in linux? 
   df -h 
@@ -21,10 +29,13 @@
   du -h --max-dept=1 /path
   
 * how to check running process? 
-  ps -aux OR ps -a
+  ps -aux | less    OR   ps -a
   
 * how to check all process? 
+  top
+  
 * how to find process id(pid) of service? 
+  ps -ef | grep <processname>
 
 * how to find a file ?
   find . -name <filename> 
