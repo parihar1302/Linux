@@ -163,6 +163,7 @@
   Swap space helps the computer’s operating system in pretending that it has more RAM than it actually has. It is also called a swap file. 
   This interchange of data between virtual memory and real memory is called swapping and space on disk as “swap space”.
  
-* what is sed command ?
+ 
+* what is sed command ?             https://www.howtogeek.com/666395/how-to-use-the-sed-command-on-linux/
   It is a stream editor which doesn't have interactive text editor infrace. In this you can perform opearton by commands.
   Sed can perform extraction, replacement, addition, deletion & etc of text as well as string.
