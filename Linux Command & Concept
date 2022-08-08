@@ -151,6 +151,18 @@
   you can use base64 follow the link --->    https://github.com/parihar1302/Linux/blob/e01b888417d40ee53a7bf87d6d8b3f0f6ae0b751/scp
   
 * what is lsof ?
+  list of open file
+  
 * what is sar command ?
+  This command helps you to monitor the system activity report of server. You can monitor the performance of CPU, Memory, I/O. 
+  It runs as a deamon in background & collect the data in every 10 second which gets stored in .txt file.
+	sysstat is package which contains sar utility.
+        
 * what is swap command ?
+  Whenever our computer runs short of physical memory it uses its virtual memory and stores information in memory on disk. 
+  Swap space helps the computer’s operating system in pretending that it has more RAM than it actually has. It is also called a swap file. 
+  This interchange of data between virtual memory and real memory is called swapping and space on disk as “swap space”.
+ 
 * what is sed command ?
+  It is a stream editor which doesn't have interactive text editor infrace. In this you can perform opearton by commands.
+  Sed can perform extraction, replacement, addition, deletion & etc of text as well as string.
