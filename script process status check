@@ -1,0 +1,5 @@
+service status httpd 
+
+if (status == stopped )
+
+service start httpd
