@@ -167,3 +167,17 @@
 * what is sed command ?             https://www.howtogeek.com/666395/how-to-use-the-sed-command-on-linux/
   It is a stream editor which doesn't have interactive text editor infrace. In this you can perform opearton by commands.
   Sed can perform extraction, replacement, addition, deletion & etc of text as well as string.
+  
+  Sar :- This command helps you to monitor the system activity report of server. You can monitor the performance of CPU, Memory, I/O. 
+       It runs as a deamon in background & collect the data in every 10 second which gets stored in .txt file.
+	   sysstat is package which contains sar utility.
+	   
+
+Swap memory:- When your system lands up on an issue where you find less physical memory that time it borrows virtual memory & use it & as soon as load goes down, it re-locate in previous state.
+              Whenever our computer runs short of physical memory it uses its virtual memory and stores information in memory on disk. 
+			  Swap space helps the computer’s operating system in pretending that it has more RAM than it actually has. It is also called a swap file. 
+			  This interchange of data between virtual memory and real memory is called swapping and space on disk as “swap space”. 
+			  
+
+Q.) What if Swap space runs out ?
+A.) A large number of user get affected on a server. Make sure you allocate enough space.
